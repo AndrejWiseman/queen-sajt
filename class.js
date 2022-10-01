@@ -100,7 +100,7 @@ class MyFooter extends HTMLElement {
                         <a href="https://www.instagram.com/kozmeticki_salon_queen/">                        <i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.facebook.com/ks.queen.prnjavor">                        <i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://m.me/Kozmetički salon - QUEEN=fm"><i class="fa-brands fa-facebook-messenger"></i></a>
-                        <a href="viber://add?number=+38765255827"><i class="fa-brands fa-viber"></i></a>
+                        <a href="viber://chat?number=%2B38765255827"><i class="fa-brands fa-viber soc"></i></a>
                         <a href="tel: +38765255827"><i class="fa-solid fa-phone"></i></a>
                     </div>
                 </div>
