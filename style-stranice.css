@@ -1,0 +1,78 @@
+
+
+
+/*==== rezervacije ======================*/
+.rezervacija-main {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.rez1 {
+    color: var(--bela);
+    text-align: center;
+}
+.rez1 h3 {
+    font-family: var(--font1);
+    font-size: 1.7rem;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.rez-p {
+    font-size: 1.4rem;
+}
+
+.rez-social {
+    display: flex;
+/*    justify-content: space-around;*/
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.rez-social .soc {
+    font-size: 3rem;
+    padding: 20px;
+}
+.rez-soc2, .rez-soc3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+.soc-poz {
+    text-decoration: none;
+    color: var(--zlatna);
+    font-size: 2.5rem;
+}
+/*=============================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

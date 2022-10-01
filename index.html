@@ -1,10 +1,299 @@
 <!doctype html>
-<html>
+<html lang="sr">
 <head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Queen - Kozmeticki salon</title>
+    <link rel="icon" href="img/logo1.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script defer src="script.js"></script>
+    <script defer src="class.js"></script>
 </head>
 
 <body>
+    
+    <div id="loader"></div>
+    
+    <div class="container animate-bottom sakriveno" id="myDiv">
+    
+        <header>
+            <div class="head-box">
+                <div class="filter"></div>
+        
+                <div class="logo " >
+                    <img src="img/logo6.png" alt="logo" class="logo-slika rellax" data-rellax-speed="-1" data-rellax-percentage="10">
+                </div>
+
+                <span class="material-symbols-outlined strelica shake-vertical">
+                    south
+                </span>
+            </div>
+            
+        </header>
+        
+        
+        <nav>
+            <div class="hamb-ram"></div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="list-items">
+                <li class="item"><a href="#">Početna</a></li>
+                <li class="item"><a href="#s2">O nama</a></li>
+                <li class="item"><a href="#s3">Galerija</a></li>
+                <li class="item"><a href="#s1">Lokacija</a></li>
+                <li class="item"><a href="rezervacija.html">Kontakt</a></li>
+            </ul>
+            
+            <div class="logo2">
+                <a href="index.html"><img src="img/logo3.png" alt="logo"></a>
+            </div>
+            
+            <div class="buk-ram"></div>
+            <div class="booking">
+                <button class="book-dugme" onclick="location.href = 'rezervacija.html';">Rezerviši termin</button>
+            </div>
+        </nav>
+        
+        
+        
+        <section class="sadrzaj">
+            
+            <div class="poz-text  scroll-pojava">
+                <h2 class="">Dobrodosli u Kozmeticki salon Queen</h2>
+                <h3>Pridruzite nam se u nasem salonu i osjecajte se kao Queen!</h3>
+            </div>
+            
+            
+            <div class="main-box">
+                
+                <div class="red1">
+                    <div class="m-box1 scroll-pojava">
+                        <div class="img-box">
+                            <a href="nas-salon.html">
+                                <div class="okvir"></div>
+                                <img src="img/11.png" alt="jpg">
+                            </a>
+                        </div>
+                        <div class="text-box">
+                            <p class="nslv">Nas salon</p>
+                            <p>Zavirite u delic atmosfere koji Vam pruzamo.</p>
+                        </div>
+                    </div>
+                
+                    <div class="m-box1 drugi-b scroll-pojava">
+                        <div class="img-box">
+                            <a href="#">
+                                <div class="okvir"></div>
+                                <img src="img/2.png" alt="jpg">
+                            </a>
+                        </div>
+                        <div class="text-box">
+                            <p class="nslv">Usluge</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat deleniti ex laudantium necessitatibus tenetur hic?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="red2">
+                    <div class="m-box1 scroll-pojava">
+                        <div class="img-box">
+                            <a href="#">
+                                <div class="okvir"></div>
+                                <img src="img/1.png" alt="jpg">
+                            </a>
+                        </div>
+                        <div class="text-box">
+                            <p class="nslv">O nama</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat deleniti ex laudantium necessitatibus tenetur hic?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="m-box1 scroll-pojava">
+<!--
+                        <div class="img-box">
+                            <img src="img/2.png" alt="">
+                        </div>
+-->
+                        <div class="text-box">
+<!--                            <p class="nslv">O nama</p>-->
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat deleniti ex laudantium necessitatibus tenetur hic?</p>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            
+            
+            <div class="media ">
+            
+<!--
+                <div class="carousel">
+                    
+                  <div class="mySlides fade">
+                    <img src="img/1.png" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="img/2.png" style="width:100%">
+                  </div>
+
+                  <div class="mySlides fade">
+                    <img src="img/5.png" style="width:100%">
+                  </div>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                </div>
+-->
+                <div class="media-slike-bg scroll-pojava"></div>
+                
+                <a href="#" class="galerija-link scroll-pojava">
+                    <div class="media-box">
+                        <h2>Galerija</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum adipisci aliquid facere blanditiis, quod aliquam molestias earum.</p>
+                    </div>
+                </a>
+            </div>
+            
+            
+            
+            <div class="slike-info">
+                <div class="slike-box1 scroll-pojava">
+                    <div class="box1-text">
+                        <p>Vrseci konstantnu edukaciju, stalno obogacujemo ponudu usluga i na taj nacin pratimo trendove</p>
+                    </div>
+                    <div class="box1-slika">
+                        <img src="img/qq1.png" alt="qq1">
+                        <p>Koristimo najkvatitetnije preparate i opremu i primjenjujemo ih sa zadovoljstvom.</p>
+                    </div>
+                </div>
+                
+                <div class="slike-box2 scroll-pojava">
+                    <div class="insta-sl">
+                        <a href="https://www.instagram.com/kozmeticki_salon_queen/" target="_blank">
+                            <i class="fa-brands fa-instagram inst1"></i>
+                            <p class="inst1">Pratite nas</p>
+                        </a>
+                    </div>
+                    
+                    <div class="insta-slike">
+                        <div class="sl1">
+                            <a href="#"><img src="img/2.png" alt="sl1">
+                            </a>
+                        </div>
+                        <div class="sl1">
+                            <a href="#"><img src="img/4.png" alt="sl1"></a>
+                        </div>
+                        <div class="sl1">
+                            <a href="#"><img src="img/5.png" alt="sl1"></a>
+                        </div>
+                        <div class="sl1">
+                            <a href="#"><img src="img/9.png" alt="sl1"></a>
+                        </div>
+                        <div class="sl1">
+                            <a href="#"><img src="img/17.png" alt="sl1"></a>
+                        </div>
+                        <div class="sl1">
+                            <a href="#"><img src="img/4.png" alt="sl1"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+        
+        
+        
+        <footer>
+            <div class="fbox1 scroll-pojava">
+                <div class="fbox1-1">
+                    <h3 class="fh3">Salon</h3>
+                    <ul>
+                        <li class="f-li"><a href="#">O nama</a></li>
+                        <li class="f-li"><a href="#">Galerija</a></li>
+                        <li class="f-li"><a href="#">Usluge</a></li>
+                    </ul>
+                </div>
+                
+                <div class="fbox1-2">
+                    <h3 class="fh3">Radno vrijeme</h3>
+                    <table>
+                        <tr>
+                            <td>Ponedjeljak</td>
+                            <td>9.00 - 20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Utorak</td>
+                            <td>9.00 - 20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Srijeda</td>
+                            <td>9.00 - 20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Četvrtak</td>
+                            <td>12.00 - 20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Petak</td>
+                            <td>12.00 - 20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Subota</td>
+                            <td>9.00 - 14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Nedjelja</td>
+                            <td>Ne radimo</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="fbox1-3">
+                    <h3 class="fh3">Kontakt</h3>
+                    <div class="adresa">
+                        <p class="adr1">Adresa:</p>
+                        <p class="adr2">Vladike Platona 26c, 78430 Prnjavor <br> Bosna i Hercegovina</p>
+                        <p class="adr3"><a href="https://goo.gl/maps/bs5eUjS4Lek41Pzm9" target="_blank">Lokacija salona</a></p>
+                    </div>
+                    <div class="telefon">
+                        <p class="tel1">Telefon:</p>
+                        <p class="tel2">+387 65 255 827</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.instagram.com/kozmeticki_salon_queen/">                        <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/ks.queen.prnjavor">                        <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://m.me/Kozmetički salon - QUEEN=fm"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="viber://add?number=+38765255827"><i class="fa-brands fa-viber"></i></a>
+                        <a href="tel: +38765255827"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="fbox2">
+                <p>&copy 2022 Queen Prnjavor</p>
+            </div>        
+        </footer>
+        
+        
+    </div>
+    
+    
+    
+    <script src="https://cdn.rawgit.com/dixonandmoe/rellax/master/rellax.min.js"></script>
 </body>
 </html>
