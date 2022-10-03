@@ -78,6 +78,8 @@ var rellax = new Rellax('.rellax', {
 //============================
 
 
+
+
 // pojavljivanje elemenata na scroll =============
 const allText = document.querySelectorAll('.scroll-pojava');
 
@@ -125,6 +127,32 @@ allText.forEach(function (text) {
 //  dots[slideIndex-1].className += " active";
 //  setTimeout(showSlides, 3000); // Change image every 2 seconds
 //}
+
+//const dugmad = document.querySelector("[data-carousel-button]");
+//
+//dugmad.forEach(button => {
+//    button.addEventListener('click', () => {
+//        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+//        
+//        const slides = button
+//                        .closest("[data-carousel]")
+//                        .querySelector("[data-slides]")
+//        
+//        
+//        const  activeSlide = slides.querySelector("[data-active]")
+//        let newIndex = [...slides.children].indexOf(activeSlide) + offset
+//        if (newIndex < 0) newIndex = slides.children.length - 1
+//        if (newIndex >= slides.children.length) newIndex = 0
+//        
+//        slides.children[newIndex].dataset.active = true
+//        delete activeSlide.dataset.active
+//        
+//    })
+//})
+
+
+
+
 
 //======================================
 

@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-stranice.css">
     
+    
     <script defer src="class.js"></script>
+    <script defer src="carousel.js"></script>
     <script defer src="script.js"></script>
+    
     
 </head>
 
@@ -23,7 +26,7 @@
     <my-nav></my-nav>
     
     
-    <section class="-main">
+    <section class="">
     
         <div class="rez1">
         
@@ -32,13 +35,43 @@
                 Zavirite u delic atosfere naseg salona.
             </p>
             
-            <div class=" ">
+            
                 
+                    
+                    <div class="carousel" data-carousel >
+                    
+                      <ul data-slides >
+                          <li class="slide"  >
+                              <img src="img/sal7-1.png" alt="slika">
+                          </li>
+
+                          <li class="slide" data-active>
+                              <img src="img/sal5-1.png" alt="slika">
+                          </li>
+
+                          <li class="slide">
+                              <img src="img/sal6-1.png" alt="slika">
+                          </li>
+                        </ul>
+                        
+                        <div class="dugmad">
+                        
+                            <button class="carousel-button prev" data-carousel-button="prev" >&larr;</button>
+                            <button class="carousel-button next" data-carousel-button="next" >&rarr;</button>
+                        
+                        </div>
+
+                    </div>
+    
                 
-            </div>
+            
+<!--            <img name="slide" width="100px" height="100px" alt="">-->
+            
+            
+            
+
             
         </div>
-    
     
     </section>
     
@@ -47,6 +80,9 @@
     
     
     <my-footer></my-footer>
+    
+    
+    
     
 </body>
 </html>
