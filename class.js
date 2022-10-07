@@ -14,7 +14,7 @@ class MyNav extends HTMLElement {
             <ul class="list-items">
                 <li class="item"><a href="index.html">Početna</a></li>
                 <li class="item"><a href="usluge.html">Usluge</a></li>
-                <li class="item"><a href="#">Cjenovnik</a></li>
+                <li class="item"><a href="cjenovnik.html">Cjenovnik</a></li>
                 <li class="item"><a href="#s3">Galerija</a></li>
                 <li class="item"><a href="#s1">Lokacija</a></li>
                 <li class="item"><a href="rezervacija.html">Kontakt</a></li>

@@ -73,6 +73,9 @@
 .usluge-sadrzaj {
     flex: 70%;
 }
+.cjenovnik-sadrzaj {
+    flex: 70%;
+}
 
 .lista-usluga ul{
     list-style-type: none;
@@ -214,7 +217,60 @@ img.hover-shadow {
 
 /*=============================================*/
 
+/*=== cjenovnik ==============*/
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.rotiranje {
+    transform: rotate(-90deg);
+    transition: 1s ease;
+}
+
+.accordion-container {
+    max-width: 500px;
+    margin: 10px auto;
+}
+
+.accordion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 1px solid var(--zlatna);
+    background-color: var(--crna);
+    color: var(--zlatna);
+    font-family: var(--font1);
+    font-size: 1.2rem;
+}
+.active {
+    background-color: var(--crnaBg);
+}
+
+.tabla {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.tabla td {
+    padding: 5px 10px;
+    border-bottom: 1px solid var(--zlatna);
+}
+
+
+/*==============================*/
+/*==============================*/
 
 
 
