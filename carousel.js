@@ -1,65 +1,44 @@
-//const dugmad = document.querySelector("[data-carousel-button]");
-//
-//dugmad.forEach(button => {
-//    button.addEventListener('click', () => {
-//        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-//        
-//        const slides = button
-//                        .closest("[data-carousel]")
-//                        .querySelector("[data-slides]")
-//        
-//        
-//        const  activeSlide = slides.querySelector("[data-active]")
-//        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-//        if (newIndex < 0) newIndex = slides.children.length - 1
-//        if (newIndex >= slides.children.length) newIndex = 0
-//        
-//        slides.children[newIndex].dataset.active = true
-//        delete activeSlide.dataset.active
-//        
-//    })
-//})
+const slider = document.querySelector('.slider');
+const carousel = document.querySelector('.carousel');
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
 
+var direction;
 
+prev.addEventListener('click', function() {
+    if(direction === -1) {
+        slider.appendChild(slider.firstElementChild);
+        direction = 1;
+    }
+    carousel.style.justifyContent = 'flex-end';
+    slider.style.transform = 'translate(20%)';
 
+    
+})
 
+next.addEventListener('click', function() {
+    direction = -1;
+    carousel.style.justifyContent = 'flex-start';
+    slider.style.transform = 'translate(-20%)';
+})
 
-//-------------------------------------------
-//var i = 0;
-//var images = [];
-//var time = 3000;
-//
-//images[0] = 'img/sal7-1.png';
-//images[1] = 'img/sal5-1.png';
-//images[2] = 'img/sal6-1.png';
-//
-//
-//function changeImg() {
-//    document.slide.src = images[i];
-//    
-//    if(i < images.length - 1) {
-//        i++;
-//    } else {
-//        i = 0;
-//    }
-//    
-//    setTimeout("changeImg()", time);
-//}
-//
-//window.onload = changeImg;
-
-
-
-
-
-
-
-
-
-
-
-
+slider.addEventListener('transitionend', function(){
+    if(direction === -1) {
+        slider.appendChild(slider.firstElementChild);
+    } else if (direction === 1) {
+        slider.prepend(slider.lastElementChild);
+    }
+    
+    slider.style.transition = 'none';
+    slider.style.transform = 'translate(0)';
+    
+    setTimeout(function() {
+        slider.style.transition = 'all 0.5s';
+    })
+    
+})
 
 
 

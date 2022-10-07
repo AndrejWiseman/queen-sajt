@@ -107,58 +107,70 @@ allText.forEach(function (text) {
 
 
 
-//=== carousel glavni ====================
-//let slideIndex = 0;
-//showSlides();
-//
-//function showSlides() {
-//  let i;
-//  let slides = document.getElementsByClassName("mySlides");
-//  let dots = document.getElementsByClassName("dot");
-//  for (i = 0; i < slides.length; i++) {
-//    slides[i].style.display = "none";  
-//  }
-//  slideIndex++;
-//  if (slideIndex > slides.length) {slideIndex = 1}    
-//  for (i = 0; i < dots.length; i++) {
-//    dots[i].className = dots[i].className.replace(" active", "");
-//  }
-//  slides[slideIndex-1].style.display = "block";  
-//  dots[slideIndex-1].className += " active";
-//  setTimeout(showSlides, 3000); // Change image every 2 seconds
-//}
 
-//const dugmad = document.querySelector("[data-carousel-button]");
+
+
+//======= Kartice za usluge ========================
+//const cards = document.querySelectorAll('.usl-box1');
 //
-//dugmad.forEach(button => {
-//    button.addEventListener('click', () => {
-//        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-//        
-//        const slides = button
-//                        .closest("[data-carousel]")
-//                        .querySelector("[data-slides]")
-//        
-//        
-//        const  activeSlide = slides.querySelector("[data-active]")
-//        let newIndex = [...slides.children].indexOf(activeSlide) + offset
-//        if (newIndex < 0) newIndex = slides.children.length - 1
-//        if (newIndex >= slides.children.length) newIndex = 0
-//        
-//        slides.children[newIndex].dataset.active = true
-//        delete activeSlide.dataset.active
-//        
+//
+//cards.forEach(card => {
+//    card.addEventListener('click', function() {
+//    card.classList.toggle('is-flipped')
 //    })
 //})
 
 
+////====================================================
+////====================================================
 
 
 
-//======================================
+//==== otvaranje modal kartice/galerija  ==============
+
+
+function openModal() {
+//  document.getElementById("myModal").style.display = "block";
+      document.querySelector(".modal").style.display = "block";
+}
+
+function closeModal() {
+  document.querySelector(".modal").style.display = "none";
+}
 
 
 
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+//  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+//==========================================
+//==========================================
 
 
 

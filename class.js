@@ -13,7 +13,8 @@ class MyNav extends HTMLElement {
             
             <ul class="list-items">
                 <li class="item"><a href="index.html">Početna</a></li>
-                <li class="item"><a href="#s2">O nama</a></li>
+                <li class="item"><a href="usluge.html">Usluge</a></li>
+                <li class="item"><a href="#">Cjenovnik</a></li>
                 <li class="item"><a href="#s3">Galerija</a></li>
                 <li class="item"><a href="#s1">Lokacija</a></li>
                 <li class="item"><a href="rezervacija.html">Kontakt</a></li>
@@ -35,8 +36,6 @@ customElements.define('my-nav', MyNav);
 
 
 
-
-
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -47,7 +46,7 @@ class MyFooter extends HTMLElement {
                     <ul>
                         <li class="f-li"><a href="#">O nama</a></li>
                         <li class="f-li"><a href="#">Galerija</a></li>
-                        <li class="f-li"><a href="#">Usluge</a></li>
+                        <li class="f-li"><a href="usluge.html">Usluge</a></li>
                     </ul>
                 </div>
                 
@@ -118,7 +117,21 @@ customElements.define('my-footer', MyFooter);
 
 
 
-
+class MyUslugeLista extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+          <ul>
+              <li><a href="manikir.html">&rArr; Manikir</a></li>
+              <li><a href="pedikir.html">&rArr; Pedikir</a></li>
+              <li><a href="obrve-trepavice.html">&rArr; Obrve i trepavice</a></li>
+              <li><a href="sminkanje.html">&rArr; Sminkanje</a></li>
+              <li><a href="puder-obrve.html">&rArr; Puder obrve</a></li>
+              <li><a href="depilacija.html">&rArr; Depilacija</a></li>
+          </ul>
+    `
+    }
+}
+customElements.define('my-usluge-lista', MyUslugeLista);
 
 
 

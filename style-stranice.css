@@ -10,12 +10,22 @@
 .rez1 {
     color: var(--bela);
     text-align: center;
+    max-width: 1000px;
+    margin: 20px auto;
 }
 .rez1 h3 {
     font-family: var(--font1);
     font-size: 1.7rem;
     padding-top: 30px;
     padding-bottom: 20px;
+}
+.rez1 h4 {
+    text-align: left;
+    font-size: 1.3rem;
+    color: var(--zlatna);
+    font-family: var(--font1);
+    padding-left: 30px;
+    padding-top: 20px;
 }
 .rez-p {
     font-size: 1.4rem;
@@ -48,14 +58,159 @@
 
 
 
+/*==== Manikir ==============================*/
 
+.usluge-m-container {
+    display: flex;
+}
+.manikir-p {
+    padding: 10px 30px 10px 30px;
+    text-align: left;
+}
+.lista-usluga {
+    flex: 30%;
+}
+.usluge-sadrzaj {
+    flex: 70%;
+}
 
+.lista-usluga ul{
+    list-style-type: none;
+    text-align: left;
+    margin: 60px 0 0 50px;
+}
+.lista-usluga li {
+    padding-top: 20px;
+    border-bottom: 1px solid var(--zlatna);
+}
+.lista-usluga a {
+    text-decoration: none;
+    color: var(--bela);  
+}
+.lista-usluga a:hover {
+    color: var(--zlatna);
+}
 
+/*--------------------------------*/
+.manikir-galerija {
+    padding: 30px;
+}
+.manikir-galerija:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.column {
+  float: left;
+  width: 25%;
+}
+.column img {
+    width: 100%;
+    padding: 4px;
+}
 
+/*-----------------------*/
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
 
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  max-width: 1000px;
+    z-index: 1000;
+}
 
+/* The Close Button */
+.close {
+  color: var(--zlatna);
+  position: absolute;
+  top: 85px;
+  right: 25px;
+  font-size: 55px;
+  font-weight: bold;
+    z-index: 1001
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  transition: 0.6s ease;
+  
+/*
+  user-select: none;
+  -webkit-user-select: none;
+*/
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sakriveno {
+    display: hidden;
+}
 
 /*=============================================*/
 
@@ -67,7 +222,21 @@
 
 
 
-
+@media (max-width: 500px) {
+    .usluge-m-container {
+        flex-direction: column-reverse;
+        padding: 5px;
+    }
+    .manikir-p {
+        padding: 5px;
+    }
+    .rez1 h4 {
+        padding: 5px;
+    }
+    .lista-usluga ul {
+        margin: 20px 0;
+    }
+}
 
 
 
